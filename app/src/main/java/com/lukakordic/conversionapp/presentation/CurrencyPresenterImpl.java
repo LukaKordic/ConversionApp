@@ -27,6 +27,7 @@ public class CurrencyPresenterImpl implements CurrencyPresenter {
 
     @Override
     public void calculateResult(double valueToConvert) {
+        currencyInteractor.getCurrencies();
         currencyView.showConversionResult(5.4342432);
     }
 }

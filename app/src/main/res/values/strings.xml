@@ -4,6 +4,7 @@
     <string name="convert_to_currency_text">Choose currency you want to convert to</string>
     <string name="amount_to_convert">Enter amount you want to convert</string>
     <string name="submit_button_text">convert</string>
+    <string name="no_value_error">Insert Value</string>
 
     <string-array name="currencies">
         <item>AUD</item>

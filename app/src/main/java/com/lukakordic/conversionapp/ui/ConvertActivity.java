@@ -1,9 +1,8 @@
 package com.lukakordic.conversionapp.ui;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -58,7 +57,11 @@ public class ConvertActivity extends AppCompatActivity implements CurrencyView {
 
     @OnClick(R.id.submit_button)
     public void convertValues() {
-        double value = Double.parseDouble(valueToConvert.getText().toString());
-        currencyPresenter.calculateResult(value);
+        if (!valueToConvert.getText().toString().isEmpty()) {
+            double value = Double.parseDouble(valueToConvert.getText().toString());
+            currencyPresenter.calculateResult(value);
+        } else {
+            valueToConvert.setError(getString(R.string.no_value_error));
+        }
     }
 }
