@@ -18,7 +18,6 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class ConvertActivity extends AppCompatActivity implements CurrencyView, AdapterView.OnItemSelectedListener {
-
     @BindView(R.id.from_currency)
     Spinner fromCurrencySpinner;
 
@@ -35,14 +34,11 @@ public class ConvertActivity extends AppCompatActivity implements CurrencyView, 
     private String fromCurrency;
     private String toCurrency;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_convert);
-
         ButterKnife.bind(this);
-
         initSpinners();
 
         currencyPresenter.setView(this);
