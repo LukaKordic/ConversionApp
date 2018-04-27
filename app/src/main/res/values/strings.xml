@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ConversionApp</string>
+    <string name="convert_from_currency_text">Choose currency you want to convert from</string>
+    <string name="convert_to_currency_text">Choose currency you want to convert to</string>
+    <string name="amount_to_convert">Enter amount you want to convert</string>
+    <string name="submit_button_text">convert</string>
+
+    <string-array name="currencies">
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>CZK</item>
+        <item>DKK</item>
+        <item>HUF</item>
+        <item>JPY</item>
+        <item>NOK</item>
+        <item>SEK</item>
+        <item>CHF</item>
+        <item>GBP</item>
+        <item>USD</item>
+        <item>BAM</item>
+        <item>EUR</item>
+        <item>PLN</item>
+    </string-array>
+</resources>

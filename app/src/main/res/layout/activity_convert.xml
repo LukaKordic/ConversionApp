@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ConvertActivity">
+
+    <TextView
+        android:id="@+id/from_currency_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/from_currency_label_margin_end"
+        android:layout_marginStart="@dimen/from_currency_label_margin_start"
+        android:layout_marginTop="@dimen/from_currency_label_margin_top"
+        android:text="@string/convert_from_currency_text"
+        android:textSize="@dimen/labels_text_size" />
+
+    <Spinner
+        android:id="@+id/from_currency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/from_currency_label"
+        android:layout_marginEnd="@dimen/from_currency_margin_end"
+        android:layout_marginStart="@dimen/from_currency_margin_start"
+        android:layout_marginTop="@dimen/from_currency_margin_top" />
+
+    <TextView
+        android:id="@+id/to_currency_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/from_currency"
+        android:layout_marginEnd="@dimen/to_currency_label_margin_end"
+        android:layout_marginStart="@dimen/to_currency_label_margin_start"
+        android:layout_marginTop="@dimen/to_currency_label_margin_top"
+        android:text="@string/convert_to_currency_text"
+        android:textSize="@dimen/labels_text_size" />
+
+    <Spinner
+        android:id="@+id/to_currency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/to_currency_label"
+        android:layout_marginEnd="@dimen/to_currency_margin_end"
+        android:layout_marginStart="@dimen/to_currency_margin_start"
+        android:layout_marginTop="@dimen/to_currency_margin_top" />
+
+    <EditText
+        android:id="@+id/value_to_convert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/to_currency"
+        android:layout_marginEnd="@dimen/value_to_convert_margin_end"
+        android:layout_marginStart="@dimen/value_to_convert_margin_start"
+        android:layout_marginTop="@dimen/value_to_convert_margin_top"
+        android:hint="@string/amount_to_convert"
+        android:inputType="numberDecimal"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/conversion_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/value_to_convert"
+        android:layout_marginEnd="@dimen/conversion_result_margin_end"
+        android:layout_marginStart="@dimen/conversion_result_margin_start"
+        android:layout_marginTop="@dimen/conversion_result_margin_top"
+        android:textAlignment="center"
+        android:textSize="@dimen/labels_text_size"
+        android:textStyle="bold"
+        tools:text="Result of conversion" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/submit_button_margin"
+        android:text="@string/submit_button_text" />
+
+</RelativeLayout>

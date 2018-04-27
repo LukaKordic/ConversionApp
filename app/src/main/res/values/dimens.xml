@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="from_currency_margin_top">8dp</dimen>
+    <dimen name="to_currency_margin_top">8dp</dimen>
+    <dimen name="labels_text_size">16sp</dimen>
+    <dimen name="from_currency_label_margin_top">8dp</dimen>
+    <dimen name="to_currency_label_margin_top">32dp</dimen>
+    <dimen name="from_currency_label_margin_start">8dp</dimen>
+    <dimen name="from_currency_label_margin_end">8dp</dimen>
+    <dimen name="from_currency_margin_end">8dp</dimen>
+    <dimen name="from_currency_margin_start">8dp</dimen>
+    <dimen name="to_currency_label_margin_end">8dp</dimen>
+    <dimen name="to_currency_label_margin_start">8dp</dimen>
+    <dimen name="to_currency_margin_end">8dp</dimen>
+    <dimen name="to_currency_margin_start">8dp</dimen>
+    <dimen name="value_to_convert_margin_top">64dp</dimen>
+    <dimen name="conversion_result_margin_top">64dp</dimen>
+    <dimen name="value_to_convert_margin_end">8dp</dimen>
+    <dimen name="value_to_convert_margin_start">8dp</dimen>
+    <dimen name="conversion_result_margin_start">8dp</dimen>
+    <dimen name="conversion_result_margin_end">8dp</dimen>
+    <dimen name="submit_button_margin">8dp</dimen>
+</resources>
