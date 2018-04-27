@@ -20,4 +20,5 @@
     <dimen name="conversion_result_margin_start">8dp</dimen>
     <dimen name="conversion_result_margin_end">8dp</dimen>
     <dimen name="submit_button_margin">8dp</dimen>
+    <dimen name="result_text_size">20sp</dimen>
 </resources>

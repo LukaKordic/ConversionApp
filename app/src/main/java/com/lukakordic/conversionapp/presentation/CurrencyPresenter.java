@@ -6,7 +6,7 @@ public interface CurrencyPresenter {
 
     void setView(CurrencyView currencyView);
 
-    void getCurrencies();
+    void calculateResult(String fromCurrency, String toCurrency, double valueToConvert);
 
-    void calculateResult(double valueToConvert);
+    void getCurrencyRates();
 }

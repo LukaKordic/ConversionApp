@@ -1,7 +1,5 @@
 package com.lukakordic.conversionapp.api;
 
-import com.lukakordic.conversionapp.models.response.HnbResponse;
-
 import com.lukakordic.conversionapp.models.data.Currency;
 
 import java.util.List;
@@ -13,7 +11,4 @@ public interface HnbApiService {
 
     @GET("rates/daily")
     Call<List<Currency>> getLatestConversionRates();
-
-    @GET("")
-    Call<HnbResponse> getConversionRatesByDate();
 }

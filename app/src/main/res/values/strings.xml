@@ -7,6 +7,7 @@
     <string name="no_value_error">Insert Value</string>
 
     <string-array name="currencies">
+        <item>HRK</item>
         <item>AUD</item>
         <item>CAD</item>
         <item>CZK</item>

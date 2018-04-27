@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".ui.ConvertActivity">
 
     <TextView
@@ -22,7 +23,8 @@
         android:layout_below="@id/from_currency_label"
         android:layout_marginEnd="@dimen/from_currency_margin_end"
         android:layout_marginStart="@dimen/from_currency_margin_start"
-        android:layout_marginTop="@dimen/from_currency_margin_top" />
+        android:layout_marginTop="@dimen/from_currency_margin_top"
+        android:backgroundTint="@color/colorAccent" />
 
     <TextView
         android:id="@+id/to_currency_label"
@@ -42,7 +44,8 @@
         android:layout_below="@id/to_currency_label"
         android:layout_marginEnd="@dimen/to_currency_margin_end"
         android:layout_marginStart="@dimen/to_currency_margin_start"
-        android:layout_marginTop="@dimen/to_currency_margin_top" />
+        android:layout_marginTop="@dimen/to_currency_margin_top"
+        android:backgroundTint="@color/colorAccent" />
 
     <EditText
         android:id="@+id/value_to_convert"
@@ -65,7 +68,7 @@
         android:layout_marginStart="@dimen/conversion_result_margin_start"
         android:layout_marginTop="@dimen/conversion_result_margin_top"
         android:textAlignment="center"
-        android:textSize="@dimen/labels_text_size"
+        android:textSize="@dimen/result_text_size"
         android:textStyle="bold"
         tools:text="Result of conversion" />
 
@@ -75,6 +78,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="@dimen/submit_button_margin"
-        android:text="@string/submit_button_text" />
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/submit_button_text"
+        android:textColor="@color/white" />
 
 </RelativeLayout>

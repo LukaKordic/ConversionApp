@@ -1,10 +1,9 @@
 package com.lukakordic.conversionapp.interaction;
 
-import android.support.annotation.NonNull;
-import android.util.Log;
 import android.widget.Toast;
 
 import com.lukakordic.conversionapp.App;
+import com.lukakordic.conversionapp.RetrofitCallback;
 import com.lukakordic.conversionapp.api.HnbApiService;
 import com.lukakordic.conversionapp.models.data.Currency;
 
@@ -18,7 +17,6 @@ import retrofit2.Response;
 
 public class CurrencyInteractorImpl implements CurrencyInteractor {
 
-    private static final String TAG = "Luka";
     private HnbApiService hnbApiService;
 
     @Inject
@@ -27,15 +25,12 @@ public class CurrencyInteractorImpl implements CurrencyInteractor {
     }
 
     @Override
-    public void getCurrencies() {
+    public void getCurrencies(final RetrofitCallback retrofitCallback) {
         hnbApiService.getLatestConversionRates().enqueue(new Callback<List<Currency>>() {
             @Override
             public void onResponse(Call<List<Currency>> call, Response<List<Currency>> response) {
                 if (response.body() != null) {
-                    for (Currency currency :
-                            response.body()) {
-                        Log.d(TAG, "onResponse: " + currency.getCurrencyCode());
-                    }
+                    retrofitCallback.onSuccess(response.body());
                 }
             }
 
